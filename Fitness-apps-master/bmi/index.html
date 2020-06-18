@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="../fitness-apps.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="fitnessApps.js"></script>
+</head>
+
+<body class="body"  >
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+<section id="app">
+<div class="container">
+<div class="row"  >
+<div class="col-md-6" id="appBody" >
+<h1 class="display-4 text-center" id="myHeader" > BMI calculator</h1>
+<form  class="form-group">
+<input type="number" class="form-control" id="weight" placeholder="Enter your weight" name="weight" required>
+</form>
+<form  name="myForm" class="form-inline">
+<input type="number" class="form-control" id="feet" placeholder="Enter your height" name="feet" required>
+<input type="number" class="form-control" id="inches" placeholder="Enter your inches" name="inches" required>
+</form>
+<div id="output">
+<div class="card bg-primary">
+<div class="card-block">
+<h3 id="BMI"> BMI:</h3>
+</div>
+</div>
+</div>
+<div id="output">
+<div class="card bg-info">
+<div class="card-block">
+<h3 id="status"> Status:</h3>
+</div>
+</div>
+</div>
+<input type="submit" onclick="WeightFunctions.setWeight(); WeightFunctions.getWeight();"></input>
+</div>
+</div>
+</div>
+</section>
+</body>
