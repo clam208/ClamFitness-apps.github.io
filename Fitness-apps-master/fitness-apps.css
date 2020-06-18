@@ -1,0 +1,10 @@
+
+.body{
+    background-color: darkgray;
+}
+
+#appBody{
+    background: linear-gradient(to bottom right, rgb(65, 117, 214), rgb(218, 218, 211));
+    height:100vh;
+    vertical-align: center;
+}

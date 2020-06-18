@@ -8,7 +8,6 @@ var WeightFunctions= function(){
     var feet = 0
     var weight = 0
     var inches =0
-
 function init (feetVal,weightVal,inchesVal){
 feet = feetVal
 weight = weightVal
